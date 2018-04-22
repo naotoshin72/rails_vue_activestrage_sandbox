@@ -11,11 +11,11 @@ services:
       TZ: Asia/Tokyo
       RAILS_ENV: development
       DATABASE_URL: 'mysql2://root:test123@db:3306'
-    command: bundle exec puma --config config/puma.rb
+    command: sh /rails_vue_activestrage_sandbox/bin/server
     volumes:
       - .:/rails_vue_activestrage_sandbox
     ports:
-      - "3000:3000"
+      - "5000:5000"
     links:
       - db
     depends_on:

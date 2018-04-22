@@ -8,16 +8,3 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
-
-
-
-import Vue from 'vue'
-import App from './app.vue'
-
-document.body.appendChild(document.createElement('hello'))
-
-new Vue({
-  el: 'hello',
-  template: '<App/>',
-  components: { App }
-})
